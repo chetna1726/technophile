@@ -1,0 +1,21 @@
+<div class="static_page">
+  <div class="container contact">
+    <h1 class="page_title">
+      <span class="icon_tech_info"></span>
+      Technophile Infotech
+    </h1>
+    <h3>your one stop destination for all <span class="bold">IT solutions</span></h3>
+
+    <h2 class='title'>get in touch</h2>
+    <%= render "layouts/flash_messages" %>
+    <div class="col-lg-6">
+      <div class="addresses">
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:540px;'><div id='gmap_canvas' style='height:440px;width:540px;'></div><div><small><a href="http://embedgooglemaps.com">                 embed google map              </a></small></div><div><small><a href="http://googlemapsgenerator.com">googlemapsgenerator.com</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(28.6390693,77.08677409999996),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(28.6390693,77.08677409999996)});infowindow = new google.maps.InfoWindow({content:'<strong>Technophile Infotech</strong><br>G56,, Gali Number 15, Raj Nagar Part II, Palam Colony, New Delhi, Delhi 110045,India<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <%= render 'form' %>
+    </div>
+  </div>
+  <%= render partial: 'share/footer' %>
+</div>

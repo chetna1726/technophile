@@ -1,0 +1,16 @@
+.modal-dialog {
+  z-index: inherit;
+}
+
+.modal-content {
+  padding: 10px;
+}
+
+.create-button {
+  position: relative;
+  left: 35px;
+}
+
+.spot-errors {
+  color: red;
+}

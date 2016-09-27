@@ -1,0 +1,31 @@
+<div class="container">
+  <h2>Log in</h2>
+  <div class="bs-docs-section">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="well bs-component" id="log-in-container">
+          <%= form_tag '/login', class: 'form-horizontal'  do %>
+            <div class='form-group'>
+              <%= label_tag 'Email', nil, class: "col-lg-2 control-label" %>
+              <div  class="col-lg-10">
+                <%= email_field_tag 'email', nil, autofocus: true, class: "form-control" %>
+              </div>
+            </div>
+
+            <div class='form-group'>
+              <%= label_tag 'Password', nil, class: "col-lg-2 control-label" %>
+              <div  class="col-lg-10">
+                <%= password_field_tag 'password', nil, autocomplete: "off", class: "form-control" %>
+              </div>
+            </div>
+
+            <div class="col-lg-10 col-lg-offset-2">
+              <%= submit_tag "Log in", class: "btn btn-primary" %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

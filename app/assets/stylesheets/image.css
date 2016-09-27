@@ -1,0 +1,8 @@
+#trip-image:hover {
+  opacity: 0.6;
+}
+
+#trip-full-image {
+  width: 650px;
+  height: 450px;
+}

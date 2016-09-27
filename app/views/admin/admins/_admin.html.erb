@@ -1,0 +1,16 @@
+<tbody>
+  <tr>
+    <td><%= admin.id %></td>
+    <td><%= admin.name %></td>
+    <td><%= admin.email %></td>
+    <td><%= admin.created_at.strftime("%d-%m-%Y") %></td>
+    <td><%= link_to 'View', admin_admin_path(admin) %></td>
+    <td><%= link_to 'Edit', edit_admin_admin_path(admin) %></td>
+    <% if admin.enabled %>
+      <td><%= link_to 'Disable', disable_admin_admin_path(admin), method: :patch,  data: { confirm: 'Do you want to disable the admin?' }  %></td>
+    <% else %>
+      <td><%= link_to 'Enable', enable_admin_admin_path(admin), method: :patch,  data: { confirm: 'Do you want to enable the admin?' }  %></td>
+    <% end %>
+    <td><%= link_to image_tag('delete-icon.png', class: 'delete-icon'), admin_admin_path(admin), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+</tbody>

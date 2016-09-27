@@ -1,0 +1,101 @@
+.well {
+  background-color: #efefef;
+}
+
+#log-in-container, #change-password-container {
+  min-height: 250px;
+  max-height: auto;
+}
+
+.navbar-right .btn-primary {
+  background-color: #000000;
+}
+
+.navbar-right .text-success {
+  margin-right: 20px;
+  line-height: 60px;
+  font-size: larger;
+}
+
+.navbar-nav > li {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#admin_remember_me {
+  margin-left: 0px;
+}
+
+#forgot-password-container {
+  min-height: 200px;
+  max-height: auto;
+}
+
+#forgot-password-container .col-lg-offset-2 {
+  margin-left: 15%;
+}
+
+.pagination {
+  float: right;
+  margin: 0px;
+}
+
+.page-active {
+  color: white !important;
+}
+
+.co-ordinates {
+  width: 130px;
+}
+
+.change-password-field {
+  width: 300px;
+}
+
+.change-password-label {
+  width: 200px;
+}
+
+#change-password-button {
+  margin-left: 200px;
+  padding: 0px;
+  width: auto;
+}
+
+.pull-right {
+  margin-bottom: 10px;
+}
+
+.sort_link {
+  color: black;
+}
+
+.select2-container {
+  border: 1px solid #dfd7ca !important;
+}
+
+#name-header {
+  min-width: 130px;
+}
+
+#spot-header {
+  width: 350px;
+}
+
+#created-at-header {
+  min-width: 100px;
+}
+
+.sort_link:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.trip-create-button {
+  position: relative;
+  top: 25px;
+}
+
+#trip-header {
+  padding-left: 0px;
+}

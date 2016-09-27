@@ -1,0 +1,8 @@
+<html>
+  <body>
+    <h4>Welcome to Technophile Infotech <%= @admin.name %></h4>
+    <p>You have successfully signed up  to Technophile Infotech, your email-id is <%= @admin.email %> and your password is <%= @admin.password %>.</p>
+    <br>
+    <p>Click <%= link_to 'here', admin_admins_url(@admin) %> to login and change your password.</p>
+  </body>
+</html>

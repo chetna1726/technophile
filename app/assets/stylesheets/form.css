@@ -1,0 +1,27 @@
+#spots-container {
+  width: 300px;
+  min-height: 50px;
+  background-color: white;
+  border: 1px solid #dfd7ca;
+  border-radius: 4px;
+  position: relative;
+  left: 15px;
+}
+
+.draft-spots {
+  color: red;
+}
+
+.done-spots {
+  color: green;
+}
+
+#spots-container a:hover {
+  color: purple;
+  text-decoration: none;
+}
+
+.remove-image {
+  width: 12px;
+  height: 12px;
+}

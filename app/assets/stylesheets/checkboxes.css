@@ -1,0 +1,15 @@
+.checkboxes {
+  width: 150px;
+  height: 150px;
+  overflow-y: scroll;
+  padding: 10px;
+  position: relative;
+  left: 15px;
+  background-color: white;
+  border: 1px solid #dfd7ca;
+  border-radius: 4px
+}
+
+.checkbox-label {
+  display: block;
+}

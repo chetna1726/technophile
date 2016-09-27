@@ -1,0 +1,14 @@
+.fileinput {
+  position: relative;
+  left: 15px;
+}
+
+.image-attachment-container {
+  width: 250px !important;
+}
+
+.file-name {
+  width: 250px !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
