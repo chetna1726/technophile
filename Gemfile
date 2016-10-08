@@ -46,7 +46,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 
   gem 'capistrano',                 '~> 3.4'
-  gem 'capistrano3-delayed-job',    '~> 1.0'
+  # gem 'capistrano3-delayed-job',    '~> 1.0'
   gem 'capistrano-rbenv'
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
