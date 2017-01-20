@@ -13,7 +13,7 @@ set :rails_env, 'production'
 server '52.66.125.51',  user: 'ubuntu', roles: %w(app web db)
 
 set :deploy_to, '/var/www/apps/technophile'
-set :branch, ENV['BRANCH'] || 'deploy'
+set :branch, 'make-frontend-changes'
 
 set :keep_releases, 5
 

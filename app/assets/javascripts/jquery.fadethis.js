@@ -38,7 +38,7 @@
                 base            = this,
                 classBaseName   = (options && options.baseName) ? options.baseName : this.defaults.baseName
             ;
-            
+
             if (!$element.is(":hasClassStartingWith('" + classBaseName + "')")) {
 
                 $element.find(":hasClassStartingWith('" + classBaseName + "')").each(function() {
