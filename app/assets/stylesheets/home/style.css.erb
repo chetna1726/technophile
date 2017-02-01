@@ -248,7 +248,7 @@ input[type="search"] {
   bottom: 40px;
 }
 #download .tech-info{
-  background: url(<%= asset_path 'tech_info.png' %>) no-repeat center top;
+  /*background: url(<%= asset_path 'tech_info.png' %>) no-repeat center top;*/
   width: 198px;
   display: block;
   text-indent: -9999px;
@@ -306,11 +306,20 @@ section .icon{
 /** tech_info Section Style Starts **/
   #tech_info_section{
     background-image: url(<%= asset_path 'home/ti2.jpg' %>);
-    opacity: 0.8;
+    opacity: 0.7;
     color: black;
-    font-size: 40px;
     line-height: 40px;
     font-family: 'proximaNova';
+  }
+  #tech_info_section h1{
+    font-size: 70px;
+    font-weight: bold;
+    text-shadow: 2px 4px 6px black, 0 0 0 #000, 2px 4px 6px black;
+  }
+  #tech_info_section p{
+    font-size: 45px;
+    font-weight: bolder;
+    text-shadow: 2px 4px 6px #def, 0 0 0 #000, 2px 4px 6px #def;
   }
   #tech_info_section .bold{ font-weight: bold; padding-bottom: 5.3em;}
 /** tech_info Section Style Ends **/
@@ -329,6 +338,16 @@ section .icon{
   #discover_section p{
     padding-bottom: 6em;
 
+  }
+  #discover_section h1{
+    font-size: 80px;
+    font-weight: bold;
+    text-shadow: 2px 4px 6px black, 0 0 0 #000, 2px 4px 6px black;
+  }
+  #discover_section p{
+    font-size: 30px;
+    /*font-weight: bolder;*/
+    text-shadow: 2px 4px 6px black, 0 0 0 #000, 2px 4px 6px black;
   }
 /** discover Section Style Ends **/
 
@@ -352,6 +371,16 @@ section .icon{
     color: black;
     font-weight: bold;
   }
+  #track_section h1{
+    font-size: 80px;
+    font-weight: bold;
+    text-shadow: 2px 4px 6px #def, 0 0 0 #000, 2px 4px 6px #def;
+  }
+  #track_section p{
+    font-size: 40px;
+    /*font-weight: bolder;*/
+    text-shadow: 2px 4px 6px #def, 0 0 0 #000, 2px 4px 6px #def;
+  }
 /** track Section Style Ends **/
 
 /** share Section Style Starts **/
@@ -365,6 +394,7 @@ section .icon{
     /*transform: translateY(-50%);*/
     color: white;
     /*position: relative;*/
+    text-shadow: 2px 4px 6px black, 0 0 0 #000, 2px 4px 6px black;
    }
   #share_section .links{
     opacity: 1 !important;
@@ -404,7 +434,7 @@ section .icon{
     font-size: 20px;
     border-bottom: 3px solid #979797;
     left: 0;
-    padding: 15px 0 5px;
+    padding: 15px 0 5px 5px;
     text-transform: uppercase;
     text-align: center;
     background-color: white !important;
@@ -421,6 +451,15 @@ section .icon{
     color: #404040;
     display: inline-block;
     /*z-index: 99999;*/
+  }
+
+  .logo {
+    float: left;
+    height: 60px;
+    width: 75px;
+    top: 0px !important;
+    margin-top: -15px;
+    padding-left: 15px;
   }
 /** Web Navigation style Ends **/
 
