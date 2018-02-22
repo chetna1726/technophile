@@ -10,7 +10,7 @@ set :scm, 'git'
 set :deploy_via, :remote_cache
 set :rails_env, 'production'
 
-server '52.66.125.51',  user: 'ubuntu', roles: %w(app web db)
+server '18.216.190.218',  user: 'ubuntu', roles: %w(app web db)
 
 set :deploy_to, '/var/www/apps/technophile'
 set :branch, ENV['BRANCH'] || 'deploy'
