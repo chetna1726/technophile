@@ -15,6 +15,8 @@
 //= require jquery.fadethis
 //= require jquery.fullPage
 //= require scroll
+//= require scrolloverflow
+//= require jquery.fullpage.extensions.min
 
 $('document').ready(function() {
   setTimeout(function() {

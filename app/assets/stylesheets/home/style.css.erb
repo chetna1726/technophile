@@ -170,6 +170,7 @@ input[type="search"] {
     text-align: center;
     vertical-align: middle;
     margin: 0 auto;
+    background-size: cover;
   }
   *::before, *::after {
     box-sizing: border-box;
@@ -247,7 +248,7 @@ input[type="search"] {
   bottom: 40px;
 }
 #download .tech-info{
-  background: url(<%= asset_path 'tech_info.png' %>) no-repeat center top;
+  /*background: url(<%= asset_path 'tech_info.png' %>) no-repeat center top;*/
   width: 198px;
   display: block;
   text-indent: -9999px;
@@ -291,9 +292,8 @@ input[type="search"] {
   padding: 0;
   margin: 0;
 }
-
-
 /** Phone wrapper style ends **/
+
 section{ color: #F2EFDC; font-size: 22px; position: relative; z-index: 1; }
 section h1{ font-size: 67px; color: #F2EFDC; font-family: 'AvenirNextLTPro'; }
 section .icon{
@@ -303,19 +303,32 @@ section .icon{
   display: block;
   margin: 0 auto;
 }
-/** walkative Section Style Starts **/
-  #walkative_section{
-    background-color: #f25d36;
-    color: #262626;
-    font-size: 40px;
+/** tech_info Section Style Starts **/
+  #tech_info_section{
+    background-image: url(<%= asset_path 'home/ti2.jpg' %>);
+    opacity: 0.7;
+    color: black;
     line-height: 40px;
     font-family: 'proximaNova';
   }
-  #walkative_section .bold{ font-weight: bold; padding-bottom: 5.3em;}
-/** walkative Section Style Ends **/
+  #tech_info_section h1{
+    font-size: 70px;
+    font-weight: bold;
+    text-shadow: 2px 4px 6px black, 0 0 0 #000, 2px 4px 6px black;
+  }
+  #tech_info_section p{
+    font-size: 45px;
+    font-weight: bolder;
+    text-shadow: 2px 4px 6px #def, 0 0 0 #000, 2px 4px 6px #def;
+  }
+  #tech_info_section .bold{ font-weight: bold; padding-bottom: 5.3em;}
+/** tech_info Section Style Ends **/
 
 /** discover Section Style Starts **/
-  #discover_section{ background-color: #037e8c; }
+  #discover_section{
+    background-image: url(<%= asset_path 'home/ti1.jpg' %>);
+    opacity: 0.8;
+  }
   section#discover_section .icon{
     width: 76px;
     height: 90px;
@@ -324,69 +337,129 @@ section .icon{
   }
   #discover_section p{
     padding-bottom: 6em;
+
+  }
+  #discover_section h1{
+    font-size: 80px;
+    font-weight: bold;
+    text-shadow: 2px 4px 6px black, 0 0 0 #000, 2px 4px 6px black;
+  }
+  #discover_section p{
+    font-size: 30px;
+    /*font-weight: bolder;*/
+    text-shadow: 2px 4px 6px black, 0 0 0 #000, 2px 4px 6px black;
   }
 /** discover Section Style Ends **/
 
 /** track Section Style Starts **/
-  #track_section{ background-color: #404040; }
+  #track_section{
+    background-image: url(<%= asset_path 'home/ti3.jpg' %>);
+    opacity: 0.8;
+  }
   section#track_section .icon{
     width: 47px;
     height: 65px;
     background-size: 100px auto;
     background-position: 0 -196px;
   }
+  #track_section h1{
+    color: black;
+    font-weight: bold;
+  }
   #track_section p{
     padding-bottom: 6em;
+    color: black;
+    font-weight: bold;
+  }
+  #track_section h1{
+    font-size: 80px;
+    font-weight: bold;
+    text-shadow: 2px 4px 6px #def, 0 0 0 #000, 2px 4px 6px #def;
+  }
+  #track_section p{
+    font-size: 40px;
+    /*font-weight: bolder;*/
+    text-shadow: 2px 4px 6px #def, 0 0 0 #000, 2px 4px 6px #def;
   }
 /** track Section Style Ends **/
 
 /** share Section Style Starts **/
-  #share_section{ background-color: #fff; }
-  #share_section h1{ color: #000; }
+  #share_section{
+    background-image: url(<%= asset_path 'home/ti4.jpg' %>);
+    opacity: 0.8;
+   }
+  #share_section h1{
+    opacity: 1 !important;
+    /*color: #000;*/
+    /*transform: translateY(-50%);*/
+    color: white;
+    /*position: relative;*/
+    text-shadow: 2px 4px 6px black, 0 0 0 #000, 2px 4px 6px black;
+   }
   #share_section .links{
+    opacity: 1 !important;
     padding-bottom: 6em;
   }
   #share_section .links a{
+    opacity: 1 !important;
     background: url(<%= asset_path 'home/icons.png' %>) no-repeat;
     display: inline-block;
     height: 75px;
     margin: 0 20px 20px;
+    background-color: white !important;
   }
   #share_section .links a.fb{
+    opacity: 1 !important;
     width: 42px;
     background-size: 92px auto;
     background-position: 0 -244px;
     position: relative;
     top: -3px;
+    /*background-color: white !important;*/
   }
   #share_section .links a.tw{
     width: 92px;
     background-size: 92px auto;
     background-position: 0 -316px;
+    /*background-color: white !important;*/
   }
 /** share Section Style Ends **/
 
-/** Web NAvigation style Starts **/
+/** Web Navigation style Starts **/
   .web_nav{
-    position: absolute;
-    bottom: 5px;
+    position: fixed;
+    top: 0px !important;
     width: 100%;
-    font-size: 10px;
-    border-top: 1px solid #979797;
+    height: 60px;
+    font-size: 20px;
+    border-bottom: 3px solid #979797;
     left: 0;
-    padding: 15px 0 5px;
+    padding: 15px 0 5px 5px;
     text-transform: uppercase;
     text-align: center;
-    /*background-color: #FFA500 !important;*/
+    background-color: white !important;
+    z-index: 99999;
   }
-   .web_nav ul li{
+  .web_nav ul li{
     list-style: none;
     display: inline-block;
-    margin: 0 40px;
+    margin: 0 60px;
+    /*z-index: 99999;*/
   }
-   .web_nav ul li a{
+  .web_nav ul li a{
     font-weight: bold;
     color: #404040;
+    display: inline-block;
+    /*z-index: 99999;*/
+  }
+
+  .logo {
+    float: left;
+    height: 60px;
+    width: 75px;
+    top: 0px !important;
+    margin-top: -15px;
+    padding-left: 15px;
   }
 /** Web Navigation style Ends **/
 
@@ -435,7 +508,7 @@ section .icon{
   #download .appStore, #download .googlePlay{ margin: 5px auto; }
   br{ display: none; }
   section h1{ font-size: 40px; line-height: 40px; margin: 15px 0 5px;}
-  #walkative_section p{ margin-bottom: 5px; }
+  #tech_info_section p{ margin-bottom: 5px; }
   section{ font-size: 16px; }
   #download .appStore, #download .googlePlay{
     background-size: 250px;
@@ -444,10 +517,10 @@ section .icon{
     height: 38px;
   }
   #nav{ right: 20px; }
-  #walkative_section{ font-size: 20px; line-height: 20px;  }
+  #tech_info_section{ font-size: 20px; line-height: 20px;  }
   .web_nav{ padding: 5px 0; }
   .web_nav ul{ margin: 0; padding: 0; }
-  #walkative_section .icon{ height: 50px; width: 50px; }
+  #tech_info_section .icon{ height: 50px; width: 50px; }
   section .icon{ background-size: 50px; }
   .col-xs-12{ padding: 0; }
   section#discover_section .icon{
@@ -485,7 +558,7 @@ section .icon{
     width: 55px;
   }
   #download{ bottom: 20px; }
-  #walkative_section .bold{
+  #tech_info_section .bold{
     padding-bottom: 3.3em;
   }
   #discover_section p, #track_section p{
