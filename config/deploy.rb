@@ -1,19 +1,19 @@
 set :stage, 'production'
 
 set :rbenv_type, :user
-set :rbenv_ruby, '2.3.0'
+set :rbenv_ruby, '2.4.1'
 
 set :application, 'campus-drive'
 set :repo_url, 'git@github.com:chetna1726/technophile.git'
 set :pty, true
-set :scm, 'git'
+# set :scm, 'git'
 set :deploy_via, :remote_cache
 set :rails_env, 'production'
 
 server '18.216.190.218',  user: 'ubuntu', roles: %w(app web db)
 
 set :deploy_to, '/var/www/apps/technophile'
-set :branch, 'make-frontend-changes'
+set :branch, ENV['BRANCH'] || 'deploy'
 
 set :keep_releases, 5
 
