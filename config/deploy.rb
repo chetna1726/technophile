@@ -10,7 +10,7 @@ set :pty, true
 set :deploy_via, :remote_cache
 set :rails_env, 'production'
 
-server '18.216.190.218',  user: 'ubuntu', roles: %w(app web db)
+server '18.188.163.103',  user: 'ubuntu', roles: %w(app web db)
 
 set :deploy_to, '/var/www/apps/technophile'
 set :branch, ENV['BRANCH'] || 'deploy'
